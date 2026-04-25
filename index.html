@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naive Bayes Algorithm - GaussianNB</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .badge {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h2 {
+            color: #444;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        .highlight {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .metric-card .value {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .metric-card .label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', monospace;
+            font-size: 0.9rem;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Monaco', monospace;
+            font-size: 0.9rem;
+            margin: 15px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Naive Bayes Algorithm - GaussianNB</h1>
+        <p class="subtitle">Classification on the Iris Flower Dataset using Python &amp; scikit-learn</p>
+
+        <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">scikit-learn</span>
+            <span class="badge">Jupyter Notebook</span>
+            <span class="badge">Machine Learning</span>
+            <span class="badge">MIT License</span>
+        </div>
+
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p>This project implements the <strong>Gaussian Naive Bayes</strong> classification algorithm on the classic <strong>Iris Flower Dataset</strong>. It covers data exploration, preprocessing, model training, evaluation, and performance analysis.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Results</h2>
+            <div class="metrics">
+                <div class="metric-card">
+                    <div class="value">93.33%</div>
+                    <div class="label">Test Accuracy</div>
+                </div>
+                <div class="metric-card">
+                    <div class="value">95.33%</div>
+                    <div class="label">CV Mean Accuracy</div>
+                </div>
+                <div class="metric-card">
+                    <div class="value">2.67%</div>
+                    <div class="label">CV Std Deviation</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Quick Start</h2>
+            <div class="highlight">
+                <pre>git clone https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB.git
+cd Implementation-of-Naive-Bayes-Algorithm---GaussianNB
+pip install -r requirements.txt
+jupyter notebook</pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Links</h2>
+            <div class="links">
+                <a href="https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB" class="btn btn-primary">View on GitHub</a>
+                <a href="https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB/blob/main/requirements.txt" class="btn btn-secondary">requirements.txt</a>
+                <a href="https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB/blob/main/LICENSE" class="btn btn-secondary">LICENSE</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Developed by <strong>Adiratna Kamble</strong> | MIT License | 2026</p>
+        </div>
+    </div>
+</body>
+</html>

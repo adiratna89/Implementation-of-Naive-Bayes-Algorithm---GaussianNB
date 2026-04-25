@@ -114,7 +114,7 @@ pip install -r requirements.txt
    ```bash
    jupyter notebook
    ```
-4. Open and run the `.ipynb` file cell by cell.
+4. Open and run the `notebooks/*.ipynb` file cell by cell.
 
 ---
 
@@ -123,7 +123,7 @@ pip install -r requirements.txt
 ```
 Implementation-of-Naive-Bayes-Algorithm---GaussianNB/
 │
-├── Implementation of Naive Baye's Algorithm - GaussianNB.ipynb   # Main notebook
+├── notebooks/Implementation of Naive Baye's Algorithm - GaussianNB.ipynb  # Main notebook
 ├── README.md                                                      # Project documentation
 ├── requirements.txt                                               # Python dependencies
 └── .gitignore                                                     # Git ignore file

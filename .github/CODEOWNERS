@@ -1,0 +1,30 @@
+# Code Owners for Naive Bayes Algorithm - GaussianNB
+# https://help.github.com/articles/about-codeowners/
+
+# Default owner for all files
+* @adiratna89
+
+# Documentation files
+/docs/ @adiratna89
+README.md @adiratna89
+CHANGELOG.md @adiratna89
+CONTRIBUTING.md @adiratna89
+CODE_OF_CONDUCT.md @adiratna89
+SECURITY.md @adiratna89
+
+# Notebook files
+/notebooks/ @adiratna89
+
+# Configuration files
+requirements.txt @adiratna89
+.gitignore @adiratna89
+.pre-commit-config.yaml @adiratna89
+
+# GitHub configuration
+/.github/ @adiratna89
+
+# CI/CD workflows
+/.github/workflows/ @adiratna89
+
+# Data files
+/data/ @adiratna89

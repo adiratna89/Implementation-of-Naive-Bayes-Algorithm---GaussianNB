@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Implementation of Naive Bayes Algorithm - GaussianNB"
+abstract: "A complete implementation of the Gaussian Naive Bayes classification algorithm on the Iris Flower Dataset using Python, scikit-learn, and Jupyter Notebook. This project covers data exploration, preprocessing, model training, evaluation, and performance analysis."
+authors:
+  - family-names: "Ratna"
+    given-names: "Adi"
+    orcid: "https://orcid.org/your-orcid-here"
+    email: "adiratna89@gmail.com"
+version: 1.0.0
+doi: "10.5281/zenodo.xxxxxxxx"
+date-released: 2026-04-06
+url: "https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB"
+license: MIT
+keywords:
+  - "naive-bayes"
+  - "gaussiannb"
+  - "machine-learning"
+  - "classification"
+  - "iris-dataset"
+  - "scikit-learn"
+  - "python"
+  - "data-science"

@@ -148,3 +148,48 @@ This project is licensed under the MIT License.
 ---
 
 **Developed by Adiratna Kamble** | [adiratna89](https://github.com/adiratna89)
+
+## DevOps & Tooling
+
+This repository uses modern development practices and tooling:
+
+### Continuous Integration (CI)
+- **GitHub Actions** — Automated validation on every push and pull request
+- Validates Python syntax, dependencies, and project structure
+- Workflow: `.github/workflows/ci.yml`
+
+### Code Quality
+- **Pre-commit Hooks** — Automatic code formatting and linting before commits
+- Tools: Black (formatting), isort (imports), flake8 (linting), nbQA (notebooks)
+- Config: `.pre-commit-config.yaml`
+
+### Code Ownership
+- **CODEOWNERS** — Automatic reviewer assignment for pull requests
+- Config: `.github/CODEOWNERS`
+
+### Project Website
+- **GitHub Pages** — Live project landing page
+- Deployed automatically on push
+- Config: `.github/workflows/pages.yml`
+
+## Community & Support
+
+### Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
+### Code of Conduct
+This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).
+
+### Security
+To report a security vulnerability, please see [SECURITY.md](SECURITY.md).
+
+### Funding
+If you find this project helpful, consider supporting it. See [FUNDING.yml](.github/FUNDING.yml) for available options.
+
+## Version History
+
+See [CHANGELOG.md](docs/CHANGELOG.md) for details.
+
+## Citation
+
+If you use this project in your research, please cite it using the [CITATION.cff](docs/CITATION.cff) file.

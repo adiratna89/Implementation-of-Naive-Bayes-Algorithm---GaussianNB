@@ -1,7 +1,6 @@
 # Naive Bayes Algorithm - GaussianNB
 
 ![CI](https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB/actions/workflows/ci.yml/badge.svg)
-
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange?logo=scikit-learn)](https://scikit-learn.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-f37626?logo=jupyter)](https://jupyter.org/)
@@ -72,11 +71,11 @@ This notebook walks through the following steps:
 
 ### Confusion Matrix
 
-| | Setosa | Versicolor | Virginica |
-|---|---|---|---|
-| **Setosa** | 9 | 0 | 0 |
-| **Versicolor** | 0 | 12 | 1 |
-| **Virginica** | 0 | 1 | 7 |
+The confusion matrix below shows the model's classification performance across all three Iris species:
+
+![Confusion Matrix](Image%20Output/confusion_matrix.png)
+
+The model achieved perfect classification for Setosa (9/9) and strong performance for Versicolor (12/13) and Virginica (7/8), with only 2 misclassifications out of 30 test samples.
 
 ---
 
@@ -84,7 +83,7 @@ This notebook walks through the following steps:
 
 Naive Bayes is based on **Bayes' Theorem** with the assumption of independence between features:
 
-$$P(C_k | X) = \frac{P(X | C_k) \cdot P(C_k)}{P(X)}$$
+$$P(C_k | X) = \\frac{P(X | C_k) \\cdot P(C_k)}{P(X)}$$
 
 Where:
 - $P(C_k | X)$ = Posterior probability of class $C_k$ given features $X$
@@ -94,7 +93,7 @@ Where:
 
 **GaussianNB** assumes features follow a **Gaussian (Normal) distribution** and uses the Gaussian Probability Density Function:
 
-$$P(x_i | C_k) = \frac{1}{\sqrt{2\pi\sigma_{k,i}^2}} \exp\left(-\frac{(x_i - \mu_{k,i})^2}{2\sigma_{k,i}^2}\right)$$
+$$P(x_i | C_k) = \\frac{1}{\\sqrt{2\\pi\\sigma_{k,i}^2}} \\exp\\left(-\\frac{(x_i - \\mu_{k,i})^2}{2\\sigma_{k,i}^2}\\right)$$
 
 ---
 
@@ -123,17 +122,20 @@ pip install -r requirements.txt
 ### Running the Notebook
 
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB.git
-   ```
+```bash
+git clone https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB.git
+```
+
 2. Navigate to the project folder:
-   ```bash
-   cd Implementation-of-Naive-Bayes-Algorithm---GaussianNB
-   ```
+```bash
+cd Implementation-of-Naive-Bayes-Algorithm---GaussianNB
+```
+
 3. Open Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
+```bash
+jupyter notebook
+```
+
 4. Open and run the `notebooks/*.ipynb` file cell by cell.
 
 ---
@@ -143,10 +145,35 @@ pip install -r requirements.txt
 ```
 Implementation-of-Naive-Bayes-Algorithm---GaussianNB/
 │
-├── notebooks/Implementation of Naive Baye's Algorithm - GaussianNB.ipynb  # Main notebook
-├── README.md                                                      # Project documentation
-├── requirements.txt                                               # Python dependencies
-└── .gitignore                                                     # Git ignore file
+├── notebooks/
+│   └── Implementation of Naive Baye's Algorithm - GaussianNB.ipynb  # Main notebook
+│
+├── Image Output/
+│   └── confusion_matrix.png                    # Model visualization output
+│
+├── data/                                       # Dataset directory
+│
+├── docs/
+│   ├── CHANGELOG.md                            # Version history
+│   └── CITATION.cff                            # Citation metadata
+│
+├── src/                                        # Source code (planned)
+│
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml                              # Continuous Integration
+│   │   └── pages.yml                           # GitHub Pages deployment
+│   ├── CODEOWNERS                              # Code ownership
+│   └── FUNDING.yml                             # Funding information
+│
+├── .gitignore                                  # Git ignore rules
+├── .pre-commit-config.yaml                     # Pre-commit hooks config
+├── CODE_OF_CONDUCT.md                          # Code of conduct
+├── CONTRIBUTING.md                             # Contribution guidelines
+├── LICENSE                                     # MIT License
+├── README.md                                   # This file
+├── SECURITY.md                                 # Security policy
+└── requirements.txt                            # Python dependencies
 ```
 
 ---
@@ -181,7 +208,6 @@ For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Citation
 
 If you use this project, please cite:
-
 - Fisher, R.A. (1936). "The use of multiple measurements in taxonomic problems". *Annals of Eugenics*.
 - Scikit-learn documentation: https://scikit-learn.org/stable/modules/naive_bayes.html
 

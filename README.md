@@ -1,9 +1,29 @@
 # Naive Bayes Algorithm - GaussianNB
 
+![CI](https://github.com/adiratna89/Implementation-of-Naive-Bayes-Algorithm---GaussianNB/actions/workflows/ci.yml/badge.svg)
+
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange?logo=scikit-learn)](https://scikit-learn.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-f37626?logo=jupyter)](https://jupyter.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [What's Inside This Project](#whats-inside-this-project)
+- [Key Results](#key-results)
+- [How Naive Bayes Works](#how-naive-bayes-works)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [DevOps & Tooling](#devops--tooling)
+- [Community & Support](#community--support)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [License](#license)
 
 ---
 
@@ -144,6 +164,28 @@ Implementation-of-Naive-Bayes-Algorithm---GaussianNB/
 ## License
 
 This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/YourFeature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature/YourFeature`)
+6. Open a Pull Request
+
+For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Citation
+
+If you use this project, please cite:
+
+- Fisher, R.A. (1936). "The use of multiple measurements in taxonomic problems". *Annals of Eugenics*.
+- Scikit-learn documentation: https://scikit-learn.org/stable/modules/naive_bayes.html
+
+For BibTeX citation, see [docs/CITATION.cff](docs/CITATION.cff).
 
 ---
 
